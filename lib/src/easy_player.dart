@@ -101,7 +101,7 @@ class _SVGAEasyPlayerState extends State<SVGAEasyPlayer>
       animationController = null;
     }
 
-    Future<MovieEntity> decode;
+    MovieEntity decode;
     if (widget.resUrl != null) {
       decode = await SVGAParser.shared.decodeFromURL(widget.resUrl!);
     } else if (widget.assetsName != null) {
