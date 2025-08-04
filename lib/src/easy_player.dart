@@ -100,6 +100,7 @@ class _SVGAEasyPlayerState extends State<SVGAEasyPlayer>
       animationController!.dispose();
       animationController = null;
     }
+    animationController = SVGAAnimationController(vsync: this);
 
     MovieEntity decode;
     if (widget.resUrl != null) {
